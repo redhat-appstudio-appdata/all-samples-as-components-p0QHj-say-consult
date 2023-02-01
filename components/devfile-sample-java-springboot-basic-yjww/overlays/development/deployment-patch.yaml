@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-yjww
+  namespace: jephilli-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:7953486a954ddbc7458ac600bbbd4e179b995974b3153308e1fbece7ead210d2
+        name: container-image
+        resources: {}
+status: {}
