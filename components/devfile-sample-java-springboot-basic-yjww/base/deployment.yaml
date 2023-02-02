@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-java-springboot-basic-yjww
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:jephilli-tenant-devfile-sample-java-springboot-basic-yjww
+      - image: quay.io/redhat-appstudio/user-workload@sha256:7953486a954ddbc7458ac600bbbd4e179b995974b3153308e1fbece7ead210d2
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
