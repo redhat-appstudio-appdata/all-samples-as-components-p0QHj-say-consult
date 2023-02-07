@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-go-basic-ojnk
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:jephilli-tenant-devfile-sample-go-basic-ojnk
+      - image: quay.io/redhat-appstudio/user-workload@sha256:6368d94aa512ddf12533c2cb3793c01ee8c71575403c463a9699c67944acb954
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
