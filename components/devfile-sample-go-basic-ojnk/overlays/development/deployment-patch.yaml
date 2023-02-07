@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-ojnk
+  namespace: jephilli-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:6368d94aa512ddf12533c2cb3793c01ee8c71575403c463a9699c67944acb954
+        name: container-image
+        resources: {}
+status: {}
